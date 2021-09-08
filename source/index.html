@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -37,32 +39,33 @@
     </header>
     <main class="page-main">
       <section class="first-screen">
-        <h1 class="first-screen__title">Функциональное питание для котов</h1>
-        <p class="first-screen__description">Занялся собой? Займись котом!</p>
-        <a class="button first-screen__selection-program">Подобрать программу</a>
-        <img src="img/index-can.png" width="280" height="270" alt="Оранжевая банка с кормом Кэт энерджи">
+        <div class="first-screen__background-color">
+          <h1 class="first-screen__title">Функциональное питание для котов</h1>
+          <p class="first-screen__description">Занялся собой? Займись котом!</p>
+          <a class="button first-screen__selection-program">Подобрать программу</a>
+          <img src="img/index-can.png" width="280" height="270" alt="Оранжевая банка с кормом Кэт энерджи">
+        </div>
       </section>
       <section class="programs">
         <div class="programs__wrapper">
           <h2 class="visually-hidden">Программы питания</h2>
           <ul class="programs__list">
-            <li class="programs__item programs__item--slim program">
-              <h3 class="program__title">Похудение</h3>
-              <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program__link" href="#">Каталог SLIM</a>
+            <li class="programs__item programs__item--slim">
+              <h3 class="programs__title">Похудение</h3>
+              <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="programs__link" href="#">Каталог SLIM</a>
             </li>
-            <li class="programs__item programs__item--pro program">
-              <h3 class="program__title">Набор массы</h3>
-              <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program__link" href="#">Каталог PRO</a>
+            <li class="programs__item programs__item--pro">
+              <h3 class="programs__title">Набор массы</h3>
+              <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="programs__link" href="#">Каталог PRO</a>
             </li>
           </ul>
         </div>
       </section>
-
       <section class="how-works">
         <div class="how-works__wrapper">
-          <h2>Как это работает</h2>
+          <h2 class="how-works__title">Как это работает</h2>
           <ul class="how-works__list">
             <li class="how-works__item how-works__item--eco">
               <p class="how-works__description">
@@ -87,7 +90,6 @@
           </ul>
         </div>
       </section>
-
       <section class="example">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
@@ -102,22 +104,22 @@
               <dd class="example__result">Затрачено времени</dd>
             </div>
             <div class="example__item">
-              <dt class="example__number">15000 руб.</dt>
-              <dd class="example__result">Затраты на питание</dd>
+              <dt class="example__number example__number--cost">15000 руб.</dt>
+              <dd class="example__result example__result--cost">Затраты на питание</dd>
             </div>
           </dl>
 
-          <div>
-            <button type="button">Было</button>
-            <div class="change-regulator">
-              <div class="change-regulator__scale">
-                <div class="change-regulator__bar"></div>
+          <div class="regulator">
+            <button class="regulator__button" type="button">Было</button>
+            <div class="regulator__change">
+              <div class="regulator__scale">
+                <div class="regulator__bar" style="width: 35%; margin-left: 5px;"></div>
               </div>
               <div class="toggle" tabindex="0">
                 <span class="visually-hidden">Кнопка изменения внешнего вида питомца</span>
               </div>
             </div>
-            <button type="button">Стало</button>
+            <button class="regulator__button" type="button">Стало</button>
           </div>
         </div>
       </section>
@@ -133,7 +135,7 @@
           </p>
         </div>
         <div class="address__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002585!2d30.32085871541271!3d59.93871916905504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1629546992173!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002585!2d30.32085871541271!3d59.93871916905504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1629546992173!5m2!1sru!2sby" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
       <div class="page-footer__other-information other-information">
@@ -145,13 +147,19 @@
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/">Мы в Контакте</a>
+                <a class="social__link social__link--vkontakte" href="https://vk.com/">
+                  <span>Мы в Контакте</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/">Мы в Инстаграме</a>
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/">
+                  <span>Мы в Инстаграм</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/">Мы в Фейсбуке</a>
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/">
+                  <span>Мы в Фейсбук</span>
+                </a>
               </li>
             </ul>
           </section>
